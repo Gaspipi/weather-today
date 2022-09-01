@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Today</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Weather Today</h1>
+        <div class="weather-input">
+            <label><input type="text" class="city" id="city" required placeholder="Los Angeles"/></label>
+                <label><input type="text" class="country" id="country" required placeholder="US"/></label>
+                <button type="submit" class="search" onclick="setClima(city, country)">Buscar</button>
+            </div>
+    </header>
+    <main>
+        
+        <section>
+        <div class="weather-item">
+            <div class="minmax">
+            <div class="local"> <!--Pais-->
+                <p id="local">Rosario <sub id="sub">ar</sub></p>
+            </div>
+            <div class="temp"> <!--Pais-->
+                <p id="temp">120<span>&#8451;</span></p>
+            </div>
+            </div>
+            
+            <div class="img"> <!--Imagen clima-->
+                <img id="img" src="/animated/cloudy-day-1.svg">
+            </div>
+            
+            <!-- <div class="minmax">
+                <div class="min"> //Temp minima
+                    <p id="min"></p>
+                </div>
+                <div class="max"> //Temp maxima
+                    <p id="max"></p>
+                </div>
+            </div> -->
+            <div class="description"> <!--Descripcion clima-->
+                <p id="desc">Descripcion de los hechos sucedidos</p>
+            </div>
+        </div>
+        </section>
+        <script src="index.js"></script>
+    </main>
+</body>
+<footer>
+    Icons by: amCharts CC
+</footer>
+</html>

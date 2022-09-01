@@ -1,0 +1,101 @@
+@font-face {
+    font-family: bantayog-regular;
+    src: url(Bantayog-Regular.woff2);
+}
+body{
+    background-color: rgb(4, 25, 82);
+    color: white;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    font-family: 'bantayog-regular';
+}
+.search{
+    width: 75px;
+    height:25px;
+    color: white;
+    background-color: rgb(219, 153, 10);
+    border-radius: 4px;
+    border: none;
+    
+}
+.weather-item{
+    width: 200px;
+    height: 250px;
+    border-radius: 16px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+section{
+    width: 100%;
+    height: 76vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.minmax{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+
+p{
+    padding: 0;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.weather-input{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    }
+header{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    
+}
+h1 {
+    width: fit-content;
+}
+input, button, .weather-item{
+    margin: 10px;
+    background-color: #dddddd42;
+
+    
+}
+
+input{
+    width: 200px;
+    height:25px;
+    background-color: #dddddd42;
+    border-radius: 4px;
+    border: none;
+
+}
+#img{
+    scale: 2.75;
+}
+.img{
+    align-self: center;
+}
+
+footer{
+    text-align: right;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+    padding-right: 20px;
+}
