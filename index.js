@@ -33,7 +33,7 @@ function setClima() {
         clima(city, country)
     }
     else{
-        alert('pone datos')
+        alert('Debes indicar tanto ciudad como pais antes  de realizar una busqueda.')
     }
     
     }
