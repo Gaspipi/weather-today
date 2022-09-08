@@ -65,7 +65,7 @@ header{
 h1 {
     width: fit-content;
 }
-input, button, .weather-item{
+input, .search, .weather-item{
     margin: 10px;
     background-color: #dddddd42;
     color: white;

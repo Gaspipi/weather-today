@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Today</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     <link rel="stylesheet" href="styles.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
@@ -16,14 +17,14 @@
         <div class="weather-input">
             <label><input type="text" class="city" id="city" required placeholder="Los Angeles"/></label>
                 <label><input type="text" class="country" id="country" required placeholder="US"/></label>
-                <button type="submit" class="search" onclick="setClima(city, country)">Buscar</button>
+                <button type="submit" class="search" onclick="setClima(city, country)">Search</button>
             </div>
     </header>
     <main>
         <div class="weather-item">
             <div class="minmax">
             <div class="local"> <!--Pais-->
-                <p id="local">Rosario <sub id="sub">ar</sub></p>
+                <p id="local">Rosario <sub id="sub">AR</sub></p>
             </div>
             </div>
             
@@ -31,7 +32,7 @@
                 <img alt="weather-img" id="img" src="/animated/c01d.svg">
             </div>
             <div class="temp"> <!--Temperatura-->
-                <p id="temp">12<span>&#8451;</span></p>
+                <p id="temp">12<span>&deg;C</span></p>
             <!-- <div class="minmax">
                 <div class="min"> //Temp minima
                     <p id="min"></p>

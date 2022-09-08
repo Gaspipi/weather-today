@@ -1,6 +1,3 @@
-
-
-
 function clima(city, country){
     city = city.replace(/ /g, "");
     country = country.replace(/ /g, "");
@@ -19,11 +16,13 @@ fetch(`https://weatherbit-v1-mashape.p.rapidapi.com/current?city=${city}&country
         const img = document.getElementById('img');
         img.src = '/animated/' + response.data[0].weather['icon'] + '.svg';
         const temp = document.getElementById('temp');
-        temp.innerHTML = response.data[0].temp + '<span>&#8451;</span>';
+        temp.innerHTML = response.data[0].temp + '<span>&deg;C</span>';
         const desc = document.getElementById('desc');
         desc.innerHTML = response.data[0].weather['description'];
     })
-	.catch(err => {console.error(err)});
+	.catch(err => {console.error(err);
+    alert(err);
+    });
 }
 
 function setClima() {
